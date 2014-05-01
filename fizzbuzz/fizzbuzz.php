@@ -24,16 +24,21 @@ class FizzBuzz {
 
     static public function commandYo() {
 
-        $result = array();
+        $result = 'please input to argument';
 
-        foreach($GLOBALS['argv'] as $val) {
+        if(count($GLOBALS['argv']) > 1) {
 
-            $res = FizzBuzz::yo($val);
+            $result = array();
 
-            if(!is_null($res)) {
-                array_push($result, $res);
+            foreach($GLOBALS['argv'] as $val) {
+
+                $res = FizzBuzz::yo($val);
+
+                if(!is_null($res)) {
+                    array_push($result, $res);
+                }
+
             }
-
         }
 
         return $result;
