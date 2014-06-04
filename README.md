@@ -1,3 +1,1 @@
-# sandbox
-
-てきとーにいろいろためしている
+# sandbox-php
